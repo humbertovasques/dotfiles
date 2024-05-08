@@ -1,0 +1,13 @@
+set editing-mode vi
+set show-mode-in-prompt
+set completion-ignore-case on
+set keyseq-timeout 0.01
+set vi-cmd-mode-string "\1\e[1 q\2"
+set vi-ins-mode-string "\1\e[5 q\2"
+
+# See ASCII octal values for more  values
+"\ed": "cd $(find / -type d 2> /dev/null | fzf)\015\014" # \e = alt, \015 = enter 
+# "\014": "clear\015" # \014 = control + l, \015 = enter 
+Control-l: clear-screen
+"\e\014": clear-display
+"\013": kill-whole-line
