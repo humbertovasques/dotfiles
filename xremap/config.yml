@@ -1,0 +1,25 @@
+# ~/.config/xremap/config.yml
+
+#keypress_delay_ms: 20
+
+modmap:
+  - name: main remaps
+    remap:
+      CapsLock: esc
+#      Semicolon: enter
+      alt_l: ctrl_l
+      alt_r: alt_l
+      #  j: h
+      #  k: j
+      #  l: k
+      #  semicolon: l
+      #  h: semicolon
+#      shift_r: alt_l
+
+keymap:
+  - name: main keymap
+    remap:
+      ctrl_l-m: KEY_ENTER
+    mode: default
+#default_mode: default
+

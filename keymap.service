@@ -1,0 +1,9 @@
+[Unit]
+Description=My custom keymap
+
+[Service]
+ExecStart=/home/ubuntu/.cargo/bin/xremap /home/ubuntu/.config/xremap/config.yml
+
+[Install]
+WantedBy=multi-user.target
+
