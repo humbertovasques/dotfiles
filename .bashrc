@@ -90,8 +90,8 @@ fi
 # some more ls aliases
 alias l='ls -lFh'
 alias la='ls -alFh'
-#alias l='ls -CF'
 alias lh='ls -lhFd .[^.]*'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -117,8 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 # My alterations
-PS1="\[$(tput setaf 2; tput bold)\]\w\[$(tput sgr0)\] \$ "
-
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias bctl='bluetoothctl'
 alias c-q20='bctl power on; bctl connect C0:EA:C3:19:86:C0'
@@ -133,19 +131,11 @@ export EDITOR='nvim'
 alias ips="ip a | grep 'inet ' | awk '{print \$2}' | fzf | tr -d '\n' | xclip -sel clip"
 
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-EMBEDDED_PS1="\1$(tput setaf 6)\2\$(parse_git_branch)\1$(tput setaf 2; tput bold)\2\w:"
-EMBEDDED_PS2="\1$(tput setaf 6)\2\$(parse_git_branch)\1$(tput setaf 3; tput bold)\2\w:"
+PS1="\[$(tput setaf 6)\]\$(parse_git_branch)\[$(tput setaf 2; tput bold)\]\w: \[$(tput sgr0)\]"
 
-reset_readline_prompt_mode_strings () {
-	bind "set vi-ins-mode-string \"${EMBEDDED_PS1@P}\1$(tput sgr0)\2\""
-    	bind "set vi-cmd-mode-string \"${EMBEDDED_PS2@P}\1$(tput sgr0)\2\""
-}
-
-PROMPT_COMMAND=reset_readline_prompt_mode_strings
-PS1=' '
 . "$HOME/.cargo/env"
 
 alias bat='batcat'
