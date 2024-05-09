@@ -129,6 +129,8 @@ shopt -s globstar
 alias startvms='for vm in $(vboxmanage list vms | cut -d '{' -f 2 | cut -d '}' -f 1); do vboxmanage startvm "$vm" --type headless; done'
 export EDITOR='nvim'
 alias ips="ip a | grep 'inet ' | awk '{print \$2}' | fzf | tr -d '\n' | xclip -sel clip"
+alias lf='ls -aFlh | fzf'
+alias ainfo='apt info $(apt list | cut -d "/" -f 1 | fzf)'
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
