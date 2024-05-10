@@ -131,6 +131,7 @@ export EDITOR='nvim'
 alias ips="ip a | grep 'inet ' | awk '{print \$2}' | fzf | tr -d '\n' | xclip -sel clip"
 alias lf='ls -aFlh | fzf'
 alias ainfo='apt info $(apt list | cut -d "/" -f 1 | fzf)'
+alias btc='bctl connect $(bctl paired-devices | awk '\''{print $3, $2}'\'' | fzf | awk '\''{print $2}'\'')'
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -142,4 +143,8 @@ PS1="\[$(tput setaf 6)\]\$(parse_git_branch)\[$(tput setaf 2; tput bold)\]\w: \[
 
 alias bat='batcat'
 alias cat='batcat'
+# export HISTCONTROL=ignoreboth:erasedups
+PPROMPT_COMMAND='history -a'
+HISTSIZE=50000
+HISTFILESIZE=50000
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
