@@ -1,4 +1,4 @@
 {
-  "keyMappings": "# Insert your preferred key mappings here.\nmap <c-s> LinkHints.activateModeToDownloadLink\nmap D scrollFullPageDown\nmap U scrollFullPageUp",
+  "keyMappings": "# Insert your preferred key mappings here.\nunmap u\nmap s scrollPageUp\nmap e scrollFullPageDown\nmap w scrollFullPageUp",
   "settingsVersion": "2.1.2"
 }
