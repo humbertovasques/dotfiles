@@ -59,6 +59,7 @@ alias nvim-tutorial='NVIM_APPNAME="nvim-tutorial" nvim'
 alias frm='rm -iv "$(find . -maxdepth 1 -mindepth 1 | fzf)"'
 alias fh='history | fzf | column -tdN number,command -l 2 -H number | wl-copy -n'
 alias mime='xdg-mime query filetype .viminfo'
+alias browser='nohup firefox &'
 
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
