@@ -1,6 +1,7 @@
 #
 # ~/.profile
 #
+echo ".profile was sourced"
 
 if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"

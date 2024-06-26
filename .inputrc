@@ -1,13 +1,17 @@
-set editing-mode vi
-set show-mode-in-prompt
+set colored-stats On
 set completion-ignore-case on
+set completion-prefix-display-length 3
+set editing-mode vi
 set keyseq-timeout 0.01
-#set vi-cmd-mode-string "\1\e[1 q\2"
-#set vi-ins-mode-string "\1\e[5 q\2"
+set mark-symlinked-directories On
+set show-all-if-unmodified On
+set show-mode-in-prompt
+set vi-cmd-mode-string "\1\e[1 q\2"
+set vi-ins-mode-string "\1\e[5 q\2"
+set visible-stats On
 
-# See ASCII octal values for more  values
-"\ed": "cd $(find / -type d 2> /dev/null | fzf)\015\014" # \e = alt, \015 = enter 
-# "\014": "clear\015" # \014 = control + l, \015 = enter 
+"\006": "exec vifm\015" 
+"\ep": "brightnessctl -d 'tpacpi::power' set 0; brightnessctl -d 'platform::mute' set 0\015"
+Control-a: "exec bash\015"
 Control-l: clear-screen
-#"\e\014": clear-display
-#"\013": kill-whole-line
+Control-o: menu-complete

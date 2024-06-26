@@ -1,0 +1,44 @@
+#!/bin/bash
+
+alias dirs='dirs -v'
+
+alias ls='ls --color=auto'
+alias l='ls -alhF'
+alias fls='l | fzf'
+alias lh='ls -lhFd .[^.]*'
+alias df='df -h | head -n 1 && df -h | tail -n +2 | sort -k 6'
+alias du='du -h'
+alias vim='nvim'
+alias grep='grep --color=auto'
+
+alias bctl='bluetoothctl'
+alias c-q20='bctl power on && bctl connect C0:EA:C3:19:86:C0'
+alias d-q20='bctl disconnect C0:EA:C3:19:86:C0'
+alias btc='bctl power on && bctl agent on && bctl default-agent && bctl connect $(bctl devices | awk '\''{print $3, $2}'\'' | fzf | awk '\''{print $2}'\'')'
+
+alias ips="ip a | grep 'inet ' | awk '{print \$2}' | fzf | tr -d '\n' | xclip -sel clip"
+alias fpac='pacman -Sl | fzf -m --preview "echo {} | awk '\''{print \$2}'\'' | xargs pacman -Si" --preview-window=wrap'
+alias fpacl='pacman -Q | fzf -m --preview "echo {} | awk '\''{print \$1}'\'' | xargs pacman -Qi" --preview-window=wrap'
+
+alias fyay='yay -Sl | fzf -m --preview "echo {} | awk '\''{print \$2}'\'' | xargs yay -Si" --preview-window=wrap'
+alias fyayl='pacman -Qm | fzf -m --preview "echo {} | awk '\''{print \$1}'\'' | xargs yay -Qi" --preview-window=wrap'
+
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+alias nvim-tutorial='NVIM_APPNAME="nvim-tutorial" nvim'
+
+alias frm='rm -iv "$(find . -maxdepth 1 -mindepth 1 | fzf)"'
+alias fh='history | fzf | column -tdN number,command -l 2 -H number | wl-copy'
+alias fcd='cd "$(find / -type d 2> /dev/null | fzf)"' 
+alias mime='xdg-mime query filetype .viminfo'
+
+alias brave='nohup brave &'
+alias firefox='nohup firefox &'
+
+alias gs='git status'
+
+alias tma='tmux attach'
+alias tmk='tmux kill-server'
+alias tml='tmux ls'
+
+alias runkeymap='sudo -E RUST_LOG=debug xremap /home/arch/.config/xremap/config.yml'
+
