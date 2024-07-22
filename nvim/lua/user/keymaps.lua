@@ -216,3 +216,11 @@ keymap("v", "p", '"_dP', opts)
 keymap("v", ">", ">gv", opts)
 keymap("v", "<", "<gv", opts)
 
+-- Change between relative numbers and normal numbers
+vim.cmd [[nmap <f2> :set norelativenumber! number?<cr>]]
+
+-- Copy relative path
+vim.cmd [[nmap <f3> :let @+=@%<cr>]]
+
+-- Set wrap to text (ideal for .txt files / Notes)
+vim.cmd [[nmap <f4> :set wrap linebreak nolist<cr>]]

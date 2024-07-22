@@ -15,6 +15,31 @@ parse_git_branch() {
 
 export EDITOR=nvim
 export MANPAGER='nvim +Man!'
+export GRIM_DEFAULT_DIR="$HOME/Images/Screenshots/"
+export XDG_PICTURES_DIR="$HOME/Images/"
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --layout=reverse \
+  --border=none
+  --color=bg+:#283457 \
+  --color=bg:#16161e \
+  --color=border:#27a1b9 \
+  --color=fg:#c0caf5 \
+  --color=gutter:#16161e \
+  --color=header:#ff9e64 \
+  --color=hl+:#2ac3de \
+  --color=hl:#2ac3de \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#2ac3de \
+  --color=query:#c0caf5:regular \
+  --color=scrollbar:#27a1b9 \
+  --color=separator:#ff9e64 \
+  --color=spinner:#ff007c \
+"
 HISTSIZE=50000
 HISTFILESIZE=50000
 # PS0="\e[1 q"
@@ -113,4 +138,8 @@ shopt -s globstar
 #   alias l='ls -l -a'
 #   alias lh='ls -lhFd .[^.]*'
 # fi
+eval "$(zoxide init bash)"
 
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
