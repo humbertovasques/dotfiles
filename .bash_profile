@@ -16,5 +16,7 @@ fi
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
+export JAVA_HOME="/usr/lib/jvm/`archlinux-java get`"
+
 exec Hyprland
 # startx

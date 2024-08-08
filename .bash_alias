@@ -10,6 +10,7 @@ alias df='df -h | head -n 1 && df -h | tail -n +2 | sort -k 6'
 alias du='du -h'
 alias vim='nvim'
 alias grep='grep --color=auto'
+alias open='xdg-open'
 
 alias bctl='bluetoothctl'
 alias c-q20='bctl power on && bctl connect C0:EA:C3:19:86:C0'
@@ -44,3 +45,6 @@ alias tml='tmux ls'
 alias runkeymap='sudo -E RUST_LOG=debug xremap /home/arch/.config/xremap/config.yml'
 
 alias monitorsetup='xrandr --output HDMI-1 --auto --left-of eDP-1'
+
+alias java8='PATH="/usr/lib/jvm/java-8-openjdk/bin:$PATH" && export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"'
+alias java21='PATH="/usr/lib/jvm/java-21-openjdk/bin:$PATH" && export JAVA_HOME="/usr/lib/jvm/java-21-openjdk"'
