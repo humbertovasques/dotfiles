@@ -17,7 +17,7 @@ alias c-q20='bctl power on && bctl connect C0:EA:C3:19:86:C0'
 alias d-q20='bctl disconnect C0:EA:C3:19:86:C0'
 alias btc='bctl power on && bctl agent on && bctl default-agent && bctl connect $(bctl devices | awk '\''{print $3, $2}'\'' | fzf | awk '\''{print $2}'\'')'
 
-alias ips="ip a | grep 'inet ' | awk '{print \$2}' | fzf | tr -d '\n' | xclip -sel clip"
+alias ips="ip a | grep 'inet ' | awk '{print \$2}' | fzf | tr -d '\n' | wl-copy -n"
 alias fpac='pacman -Sl | fzf -m --preview "echo {} | awk '\''{print \$2}'\'' | xargs pacman -Si" --preview-window=wrap'
 alias fpacl='pacman -Q | fzf -m --preview "echo {} | awk '\''{print \$1}'\'' | xargs pacman -Qi" --preview-window=wrap'
 alias ipac='sudo pacman -S `fpac | awk '\''{print $2}'\''`'

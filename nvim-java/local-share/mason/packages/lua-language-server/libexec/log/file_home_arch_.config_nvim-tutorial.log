@@ -1,0 +1,321 @@
+[16:56:43.852][info] [#0:/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:68]: Lua Lsp startup, root: 	/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec
+[16:56:43.852][info] [#0:/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:69]: ROOT:	/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec
+[16:56:43.852][info] [#0:/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:70]: LOGPATH:	/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/log
+[16:56:43.853][info] [#0:/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:71]: METAPATH:	/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
+[16:56:43.853][info] [#0:/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:72]: VERSION:	3.9.3
+[16:56:43.909][info] [#0:script/proto/proto.lua:234]: Listen Mode: stdio
+[16:56:43.909][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.392 MB
+        # 00 : 1.392 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:56:43.918][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      positionEncodings = { "utf-16" }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "sortText", "filterText", "insertText", "textEdit", "insertTextFormat", "insertTextMode" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = false
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "location", "command" }
+        }
+      },
+      publishDiagnostics = {
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      rangeFormatting = {
+        dynamicRegistration = true
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = false
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeConfiguration = {
+        dynamicRegistration = false
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.10.0-dev+v0.10.0"
+  },
+  initializationOptions = {},
+  processId = 15979,
+  rootPath = "/home/arch/.config/nvim-tutorial",
+  rootUri = "file:///home/arch/.config/nvim-tutorial",
+  trace = "off",
+  workDoneToken = "1",
+  workspaceFolders = { {
+      name = "/home/arch/.config/nvim-tutorial",
+      uri = "file:///home/arch/.config/nvim-tutorial"
+    } }
+}
+[16:56:43.918][info] [#0:script/language.lua:137]: VSC language: nil
+[16:56:43.918][info] [#0:script/language.lua:138]: LS  language: en-us
+[16:56:43.918][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/arch/.config/nvim-tutorial
+[16:56:43.918][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/log/file_home_arch_.config_nvim-tutorial.log
+[16:56:43.919][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/arch/.config/nvim-tutorial
+[16:56:44.124][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[16:56:44.225][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[16:56:44.225][info] [#0:script/provider/provider.lua:61]: Load config from client	fallback
+[16:56:44.225][info] [#0:script/provider/provider.lua:62]: nil
+[16:56:44.348][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/arch/.config/nvim-tutorial
+[16:56:44.372][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[16:56:44.493][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/arch/.config/nvim-tutorial
+[16:56:44.504][info] [#0:script/workspace/workspace.lua:330]: Scan files at:	file:///home/arch/.config/nvim-tutorial
+[16:56:44.506][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[16:56:44.510][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[16:56:44.511][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[16:56:44.511][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[16:56:44.512][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[16:56:44.512][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[16:56:44.513][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[16:56:44.513][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[16:56:44.514][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[16:56:44.514][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[16:56:44.515][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[16:56:44.515][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[16:56:44.517][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[16:56:44.517][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[16:56:44.517][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[16:56:44.518][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[16:56:44.518][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[16:56:44.519][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[16:56:44.519][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[16:56:44.519][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[16:56:44.519][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[16:56:44.520][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[16:56:44.520][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[16:56:44.621][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[16:56:44.621][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	<fallback>
+[16:56:44.621][info] [#0:script/workspace/workspace.lua:379]: Found 24 files at:	file:///home/arch/.config/nvim-tutorial
+[16:56:44.621][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/arch/.config/nvim-tutorial
+[16:56:44.623][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[16:56:44.626][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[16:56:44.626][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[16:56:44.626][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[16:56:44.643][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[16:56:44.643][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[16:56:44.643][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[16:56:44.646][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[16:56:44.646][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[16:56:44.646][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.619 KB
+[16:56:44.663][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[16:56:44.663][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[16:56:44.663][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[16:56:44.666][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[16:56:44.666][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[16:56:44.670][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[16:56:44.678][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[16:56:44.678][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[16:56:44.681][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[16:56:44.681][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[16:56:44.681][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[16:56:44.681][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.235 KB
+[16:56:44.687][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[16:56:44.687][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.509 KB
+[16:56:44.698][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[16:56:44.698][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[16:56:44.698][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[16:56:44.698][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[16:56:44.698][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.341 KB
+[16:56:44.713][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[16:56:44.713][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[16:56:44.713][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.600 KB
+[16:56:44.720][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[16:56:44.720][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/arch/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[16:56:44.720][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.103] sec: <fallback>
+[16:56:44.721][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: <fallback>
+[16:56:44.721][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	<fallback>
+[16:56:44.721][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[16:56:44.730][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/init.lua , size = 0.132 KB
+[16:56:44.731][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/lsp/init.lua , size = 0.170 KB
+[16:56:44.732][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/lsp/mason.lua , size = 0.917 KB
+[16:56:44.734][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/lsp/settings/lua_ls.lua , size = 0.233 KB
+[16:56:44.735][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/lsp/settings/jsonls.lua , size = 5.150 KB
+[16:56:44.738][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/lsp/settings/pyright.lua , size = 0.108 KB
+[16:56:44.739][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/arch/.config/nvim-tutorial/lua/user/lsp/handlers.lua
+[16:56:44.739][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/lsp/null-ls.lua , size = 0.636 KB
+[16:56:44.741][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/plugins.lua , size = 2.232 KB
+[16:56:44.744][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/options.lua , size = 3.117 KB
+[16:56:44.746][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/colorscheme.lua , size = 0.120 KB
+[16:56:44.747][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/keymaps.lua , size = 1.920 KB
+[16:56:44.750][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/arch/.config/nvim-tutorial/lua/user/cmp.lua , size = 3.365 KB
+[16:56:44.855][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.138] sec: file:///home/arch/.config/nvim-tutorial
+[16:56:44.855][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/arch/.config/nvim-tutorial
+[16:56:44.856][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/arch/.config/nvim-tutorial
+[16:56:44.856][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/arch/.config/nvim-tutorial
+[16:56:44.881][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/arch/.config/nvim-tutorial], files count:[24]
+[16:56:45.133][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/arch/.config/nvim-tutorial] finished, takes [0.127] sec.
+[16:59:58.693][info] [#0:script/provider/provider.lua:169]: Server shutdown.
+[16:59:58.794][info] [#0:script/provider/provider.lua:162]: Server exited.
